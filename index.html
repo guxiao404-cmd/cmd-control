@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"
+    />
+    <title>Cmd Control 暗黑三国</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main id="app">
+      <section class="intro" aria-label="游戏说明">
+        <p class="eyebrow">PAL-LX9 · Dark Three Kingdoms</p>
+        <h1>Cmd Control 暗黑三国</h1>
+        <p>横屏手机原型：左侧虚拟摇杆移动，点击战场设定移动/攻击目标，右侧按钮释放普攻、无双和集结。</p>
+      </section>
+
+      <section class="game-shell" aria-label="游戏区域">
+        <canvas id="game" width="960" height="540" aria-label="暗黑三国横版战场画布"></canvas>
+
+        <div class="touch-controls" aria-label="触屏控制器">
+          <div class="joystick" data-joystick aria-label="虚拟摇杆">
+            <div class="joystick-knob" data-joystick-knob></div>
+          </div>
+
+          <div class="touch-cluster action-controls">
+            <button class="touch-button attack" type="button" data-action="attack" aria-label="普攻">斩</button>
+            <button class="touch-button skill" type="button" data-action="skill" aria-label="无双技能">无双</button>
+            <button class="touch-button rally" type="button" data-action="rally" aria-label="集结亲兵">集结</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
